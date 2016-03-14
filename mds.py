@@ -46,7 +46,7 @@ if __name__ == '__main__':
 
     print "Calculou similaridades"
 
-    mds = MDS(n_components=2, metric=False, max_iter=100, eps=1e-9, verbose=2, random_state=RS, dissimilarity="precomputed", n_jobs=4)
+    mds = MDS(n_components=2, metric=False, max_iter=100, eps=1e-6, verbose=2, random_state=RS, dissimilarity="precomputed", n_jobs=4)
     mds_result = mds.fit_transform(similarities)
 
     print "Calculou o MDS"
